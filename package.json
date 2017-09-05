@@ -1,0 +1,31 @@
+{
+  "name": "enb-headless-chrome-testing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "enb": "enb make"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/direct-adv-interfaces/enb-headless-chrome-testing.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/direct-adv-interfaces/enb-headless-chrome-testing/issues"
+  },
+  "homepage": "https://github.com/direct-adv-interfaces/enb-headless-chrome-testing#readme",
+  "dependencies": {
+    "enb": "^1.5.1",
+    "mocha-headless-chrome": "^1.2.0",
+    "promise-queue": "^2.2.3",
+    "vow": "^0.4.16",
+    "vow-fs": "^0.3.6"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^3.5.0"
+  }
+}
