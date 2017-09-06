@@ -19,7 +19,7 @@
   "homepage": "https://github.com/direct-adv-interfaces/enb-headless-chrome-testing#readme",
   "dependencies": {
     "enb": "^1.5.1",
-    "mocha-headless-chrome": "^1.3.2",
+    "mocha-headless-chrome": "^1.3.3",
     "promise-queue": "^2.2.3",
     "vow": "^0.4.16",
     "vow-fs": "^0.3.6"
