@@ -16,7 +16,7 @@ const MAX_QUEUE = Infinity;
 let queue = new Queue(MAX_INSTANCES, MAX_QUEUE);
 
 module.exports = require('enb/lib/build-flow').create()
-    .name('phantom-testing')
+    .name('headless-chrome-testing')
     .target('target', '?.test-result.json')
     .dependOn('html', '?.html')
     .methods({
@@ -28,9 +28,11 @@ module.exports = require('enb/lib/build-flow').create()
         }
     })
     .builder(function() {
-        let sourceTargetFilePath = this.resolveTargetPath(this._html);
+        let htmlPath = this.resolveTargetPath(this._html);
 
-        return queue.add(() => runner({ file: sourceTargetFilePath }));
+        return queue.add(() =>
+            runner({ file: htmlPath, reporter: 'none' })
+                .then(obj => JSON.stringify(obj, null, 2)));
     })
     .needRebuild(function() { return true })
     .createTech();
