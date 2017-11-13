@@ -35,3 +35,10 @@ nodeConfig.addTech([
 
 nodeConfig.addTargets(['?.test-result.json']);
 ```
+
+### Переменные окружения
+
+Вы можете использовать переменные окружения для настройки параметров работы *enb-headless-chrome-testing*.
+
+- **DEV_CHROME_PATH** - путь к запускаемому файлу Chrome. Этот параметр полезен, если вы хотите запускать *enb-headless-chrome-testing* из нескольких папок на одном компьютере и иметь для них общий экземпляр Chrome. 
+- **MAX_CHROME_INSTANCES** - максимальное количество одновременно запущенных экземпляров Chrome.
