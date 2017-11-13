@@ -17,6 +17,7 @@ npm i enb-headless-chrome-testing
 
 - `String` **[target]** — Результирующий таргет. По умолчанию `?.test-result.json`.
 - `String` **[html]** — Таргет страницы с тестами, которая будет передана в Headless Chrome. По умолчанию `?.html`. Указанный таргет будет собран автоматически перед запуском тестов.
+- `Boolean` **[headless]** — Признак, нужно ли показывать окно Chrome. По умолчанию `true`. Если передать `false`, то окно будет показано. Полезен при отладке тестов.
 
 ### Пример
 
@@ -27,7 +28,8 @@ nodeConfig.addTech([
     chromeTesting, 
     {
         target: '?.test-result.json',
-        html: '?.html'
+        html: '?.html',
+        headless: true
     }
 ]);
 
