@@ -3,7 +3,7 @@
 /** [enb-headless-chrome-testing](https://github.com/direct-adv-interfaces/enb-headless-chrome-testing) */
 
 const vow = require('vow');
-const runner = require('mocha-headless-chrome');
+const {runner} = require('mocha-headless-chrome');
 
 const Queue = require('promise-queue');
 

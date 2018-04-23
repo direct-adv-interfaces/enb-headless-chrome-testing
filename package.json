@@ -19,13 +19,13 @@
   "homepage": "https://github.com/direct-adv-interfaces/enb-headless-chrome-testing#readme",
   "dependencies": {
     "enb": "^1.5.1",
-    "mocha-headless-chrome": "1.8.3",
-    "promise-queue": "^2.2.3",
-    "vow": "^0.4.16",
+    "mocha-headless-chrome": "2.0.0",
+    "promise-queue": "^2.2.5",
+    "vow": "^0.4.17",
     "vow-fs": "^0.3.6"
   },
   "devDependencies": {
     "chai": "^4.1.2",
-    "mocha": "^3.5.0"
+    "mocha": "^5.1.1"
   }
 }
