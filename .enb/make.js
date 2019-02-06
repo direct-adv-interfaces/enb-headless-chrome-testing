@@ -7,7 +7,7 @@ module.exports = function(config) {
 
         node.addTechs([
             [provideFile, { target: '?.html' } ],
-            [chromeTesting, { headless: false }]
+            [chromeTesting, { headless: true }]
         ]);
 
         node.addTargets(['?.test-result.json']);
